@@ -1,0 +1,341 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.inner{
+  width: 100%;
+  height: 100%;
+  padding: 0 auto;
+  overflow: hidden;
+}
+
+.header_container{
+  width: 100%;
+  height: 65px;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(36, 55, 126, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.046);
+}
+
+.header_a{
+  text-decoration: none;
+}
+
+.header_brand{
+  width: 200px;
+  height: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.header_brand_img{
+  width: 60px;
+  height: 60px;
+}
+
+.header_brand_p{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.header_gbsw{
+  width: 210px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_gbsw_icon{
+  width: 55px;
+  height: 55px;
+}
+
+.header_gbsw_p{
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.main_background{
+  width: 100%;
+  height: 695px;
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_background_filter{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.article{
+  margin-top: 65px;
+  width: 100%;
+  height: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.article_title{
+  font-family: 'Gowun Batang', serif;
+  width: 700px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  line-height: 26px;
+  margin-top: 143px;
+  /* background-color:aquamarine; */
+}
+
+.article_title_p{
+  text-align: center;
+  color: white;
+}
+
+.ariticle_title_ko{
+  line-height: 27px;
+}
+
+.article_title_h3_ko1{
+  font-size: 30px;
+}
+
+.article_title_p_ko2{
+  font-size: 22px;
+}
+
+.article_title_h3_en1{
+  font-size: 19px;
+}
+
+.article_title_p_en2{
+  font-size: 17px;
+}
+
+.main{
+  width: 100%;
+  height: 495px;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.nav_container{
+  width: 1000px;
+  height: 490px;
+  margin: 50px 179px 0 190px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.nav{
+  width: 300px;
+  height: 400px;
+  transition: transform 0.3s;
+
+}
+
+.nav_title_img{
+  width: 300px;
+  height: 350px;
+  border-radius: 180px 180px 0 0;
+
+}
+
+.title_img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 180px 180px 0 0;
+  transition: filter 0.3s;
+}
+
+.nav_title{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Nanum Gothic Coding', monospace;
+  line-height: 25px;
+  background-color: rgb(227, 227, 227);
+}
+
+.nav_title_h3{
+  font-size: 20px;
+}
+
+.nav:hover{ 
+  transform: scale(1.05,1.05);
+  filter: brightness(0.8);
+}
+
+.section{
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.section_container{
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  top: 70px;
+  display: flex;
+}
+
+.section_content{
+  width: 50%;
+  height: 630px;
+}
+
+.section_title{
+  width: 57%;
+  height: 100%;
+  padding: 20px 45px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.section_title_h{
+  font-size: 32px;
+}
+
+.section_title_p{
+  font-size: 16px;
+}
+
+.section_list{
+  font-size: 18px;
+}
+
+.section_intro{
+  font-size: 25px;
+}
+
+.section_p{
+  line-height: 23px;
+}
+
+.section_img{
+  width: 43%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+}
+
+.section_img_container
+{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.section_img_div1{ /* 금잔화 */
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  left: 250px;
+  position: relative;
+  background-color: #2C74B3;
+}
+
+.section_img_div2{ /* 알리움 */
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  left: 250px;
+  position: relative;
+  background-color: #205295;
+}
+
+.section_img_div3{ /* 할미꽃 */
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  left: 250px;
+  position: relative;
+  background-color: #144272;
+}
+
+.section_img_flower1{ /* 금잔화 */
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  right: 570px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/10/00/15/calendula-3072786_640.jpg);
+}
+
+.section_img_flower2{/* 알리움 */
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  right: 570px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://www.koreaflowerpark.com/img_up/shop_pds/rp530/bbs/rp530/add_img/2019/kakaotalk_20190528_233400646_051559060048.jpg);
+}
+
+.section_img_flower3{ /* 할미꽃 */
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  right: 570px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.pixabay.com/photo/2019/03/10/10/51/do-mi-flower-4045884_640.jpg);
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+  line-height: 25px;
+  color: grey;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+@media screen and (max-width:500px){
+  .header_gbsw{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .section_img_container{
+    display: none;
+  }
+}

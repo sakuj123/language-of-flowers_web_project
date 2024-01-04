@@ -1,0 +1,271 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.inner{
+  width: 100%;
+  height: 100%;
+  padding: 0 auto;
+  overflow: hidden;
+}
+
+.header_container{
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.174);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.046);
+}
+
+a{
+  text-decoration: none;
+}
+
+.header_brand{
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_brand_p{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.header_brand_img{
+  width: 60px;
+  height: 60px;
+}
+
+.header_gbsw{
+  width: 210px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_gbsw_p{
+  font-size: 40px;
+  font-family: 'Dongle', sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.header_gbsw_icon{
+  width: 55px;
+  height: 55px;
+}
+
+.section1{
+  width: 100%;
+  height: 772px;
+  background-image: url(https://cdn.pixabay.com/photo/2022/05/31/18/12/flowers-7233987_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section1_background{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section_ariticle_content{
+  width: 100%;
+  height: 100%;
+  margin-top: 65px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.article_title1{
+  margin-bottom: 50px;
+  width: 850px;
+  height: 350px;
+  text-align: center;
+}
+
+.title_ko{
+  line-height: 350%;
+  color: white;
+}
+
+.title_ko1{
+  font-size: 53px;
+  font-weight: bold;
+}
+
+.title_ko2{
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.title_en{
+  color: lightgray;
+}
+
+.title_en1{
+  font-size: 25px;
+}
+
+.title_en2{
+  font-size: 17px;
+}
+
+
+.section2_container{
+  width: 100%;
+  height: 627px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.nav_container{
+  margin-top: 10%;
+  width: 100%;
+  height: 580px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.nav{
+  width: 300px;
+  height: 400px;
+  /* background-color: blue; */
+  justify-content: space-around;
+}
+
+.nav_title{
+  width: 300px;
+  height: 450px;
+  color: white;
+}
+
+.nav_p{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.106);
+  color: white;
+}
+
+.nav_img1{/* 용담 */
+  width: 300px;
+  height: 400px;
+  background-image: url(https://cdn.pixabay.com/photo/2018/04/29/13/55/gentians-3360029_1280.jpg);
+  object-fit: fill;
+  box-shadow: 2px 2px 10px gray;
+  opacity: 95%;
+  transition: transform 0.3s;
+}
+
+.nav_img1:hover{
+  transform: scale(1.1);
+}
+
+.nav_img1:hover .nav_p{
+  opacity: 1;
+}
+
+.nav_img2{/* 분홍장미 */
+  width: 300px;
+  height: 400px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/17/05/48/rose-1599722_1280.jpg);
+  object-fit: fill;
+  box-shadow: 2px 2px 10px  gray;
+  opacity: 95%;
+  transition: transform 0.3s;
+}
+
+.nav_img2:hover{
+  transform: scale(1.1);
+}
+
+.nav_img2:hover .nav_p{
+  opacity: 1;
+}
+
+.nav_img3{/* 금잔화 */
+  width: 300px;
+  height: 400px;
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20230712_276%2F1689141783626imoOn_PNG%2F2472584903222941_28664880.png&type=sc960_832);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  box-shadow: 2px 2px 10px gray;
+  opacity: 95%;
+  transition: transform 0.3s;
+}
+
+.nav_img3:hover{
+  transform: scale(1.1);
+}
+
+.nav_img3:hover .nav_p{
+  opacity: 1;
+}
+
+.nav_img4{/* 국화 */
+  width: 300px;
+  height: 400px;
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20150927_175%2Fparkjimi1004_14433506066231dyIe_JPEG%2F740_20150924_220903.jpg&type=sc960_832);
+  object-fit: fill;
+  box-shadow: 2px 2px 10px gray;
+  opacity: 95%;
+  transition: transform 0.3s;
+}
+
+.nav_img4:hover{
+  transform: scale(1.1);
+}
+
+.nav_img4:hover .nav_p{
+  opacity: 1;
+}
+
+.article
+{
+  width: 100%;
+  height: 100px;
+  /* background-color: beige; */
+}
+
+.article_title2{
+  width: 100%;
+  height: 100px;
+  font-size: 25px;
+  padding-top: 5px;
+  text-align: center;
+  font-family: 'Gowun Batang', serif; 
+}
+
+.article_title_en{
+  font-size: 18px;
+}
+
+@media screen and (max-width:500px){
+  .header_gbsw{
+    display: none;
+  }
+}
